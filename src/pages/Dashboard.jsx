@@ -48,7 +48,7 @@ export default function Dashboard() {
             <div className="w-10 h-10 rounded-full bg-linear-to-tr from-pink-500 to-orange-400 p-[2px] shadow-sm">
                <img src="https://images.unsplash.com/photo-1546272989-40c92939c6c2?q=80&w=250&auto=format&fit=crop" alt="Profile" className="w-full h-full rounded-full object-cover border-2 border-[#0f0b2f]" />
             </div>
-            <h1 className="text-xl font-medium tracking-wide">TezCredit</h1>
+            <h1 className="text-xl font-medium tracking-wide">Boroww</h1>
           </div>
           <div className="flex items-center gap-4">
             <button className="text-white/80 hover:text-white transition-colors">
@@ -201,7 +201,7 @@ export default function Dashboard() {
       </main>
 
       {/* Floating Bottom Navigation (Dock) */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-50 w-max">
+      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-max">
         <div className="flex items-center gap-1 bg-white/90 dark:bg-slate-800/90 backdrop-blur-xl border border-slate-200/50 dark:border-slate-700/50 p-2 rounded-3xl shadow-2xl">
           {navItems.map((item) => {
             const isActive = activeTab === item.id;

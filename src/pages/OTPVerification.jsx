@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { login } from '../store/authSlice';
 import { ArrowLeft } from 'lucide-react';
 import {
   InputOTP,
@@ -13,6 +15,7 @@ export default function OTPVerification() {
   const inputRef = useRef(null);
   
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const location = useLocation();
   const phoneNumber = location.state?.phoneNumber || '9899835407';
 
@@ -28,7 +31,8 @@ export default function OTPVerification() {
 
   const handleProceed = () => {
     if (otp.length === 6) {
-      navigate('/success');
+      dispatch(login({ phoneNumber }));
+      navigate('/dashboard', { replace: true });
     }
   };
 

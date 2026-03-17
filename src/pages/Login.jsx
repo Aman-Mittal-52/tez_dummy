@@ -15,7 +15,7 @@ export default function Login() {
     <div className="min-h-screen bg-slate-50 flex flex-col font-sans max-w-md w-full mx-auto relative overflow-hidden">
       {/* Hero Image Section */}
       <div className="pt-12 px-6 flex justify-center">
-        <h1 className="text-2xl font-bold text-indigo-700">TezCredit</h1>
+        <h1 className="text-2xl font-bold text-indigo-700">Boroww</h1>
       </div>
       
       <div className="relative mt-8 px-6 flex justify-center">
@@ -31,7 +31,7 @@ export default function Login() {
             }}
           />
           <div className="absolute inset-0 hidden items-center justify-center">
-             <span className="text-indigo-300 font-medium">Hero Illustration</span>
+            <img src="/src/assets/money.png" className='w-full h-full object-cover object-bottom' alt="" />
           </div>
         </div>
       </div>

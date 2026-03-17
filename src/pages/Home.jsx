@@ -90,7 +90,7 @@ export default function Home() {
       </main>
 
       {/* Bottom Navigation */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 w-max">
+      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-max">
         <div className="flex items-center gap-1 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-lg border border-neutral-200 dark:border-neutral-800 p-2 rounded-2xl shadow-xl">
           {navItems.map((item, index) => {
             const isActive = activeIndex === index;
