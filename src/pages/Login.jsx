@@ -31,7 +31,7 @@ export default function Login() {
             }}
           />
           <div className="absolute inset-0 hidden items-center justify-center">
-            <img src="/src/assets/money.png" className='w-full h-full object-cover object-bottom' alt="" />
+            <img src="/money.png" className='w-full h-full object-cover object-bottom' alt="" />
           </div>
         </div>
       </div>

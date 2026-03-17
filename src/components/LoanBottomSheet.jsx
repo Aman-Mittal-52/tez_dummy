@@ -6,7 +6,7 @@ export function LoanBottomSheet({ onClose }) {
   const [amount, setAmount] = useState(2500);
   const [tenure, setTenure] = useState('Jan');
   const navigate = useNavigate();
-  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei'];
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May'];
   
   const minAmount = 100;
   const maxAmount = 5000;
@@ -27,9 +27,11 @@ export function LoanBottomSheet({ onClose }) {
       initial={{ y: "100%" }}
       animate={{ y: 0 }}
       exit={{ y: "100%" }}
-      transition={{ type: "spring", damping: 25, stiffness: 200 }}
-      className="absolute bottom-0 left-0 w-full bg-white rounded-t-3xl z-50 shadow-[0_-10px_40px_rgba(0,0,0,0.1)] flex flex-col font-sans max-h-[85vh] h-auto"
+      transition={{ type: "spring", damping: 30, stiffness: 300 }}
+      className="w-full bg-white rounded-t-[40px] shadow-[0_-20px_50px_rgba(0,0,0,0.2)] flex flex-col font-sans max-h-[90vh] overflow-hidden"
     >
+      {/* Handle for dragging feel */}
+      <div className="w-12 h-1.5 bg-slate-200 rounded-full mx-auto mt-4 mb-2 shrink-0" />
       <div className="p-8 pb-10">
         <h2 className="text-xl font-bold text-slate-800 mb-2">Select Loans Amount</h2>
         <p className="text-sm text-slate-400 mb-6">Move the slider to select your loans amount</p>

@@ -6,15 +6,15 @@ export default function LoanSuccess() {
   const location = useLocation();
   const navigate = useNavigate();
   // Provide a fallback if accessed directly
-  const amount = location.state?.amount || 2500;
+  const amount = location.state?.amount || 25000;
 
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans max-w-md w-full mx-auto relative overflow-hidden items-center pt-24 pb-12 px-6">
-      <h1 className="text-xl font-bold text-slate-800 mb-8">Loans Success</h1>
+      <h1 className="text-xl font-bold text-slate-800 mb-8">Loans Request Success</h1>
       
       <div className="text-center mb-16">
         <h2 className="text-xl text-slate-400 font-medium mb-1">Jimmy Sullivan</h2>
-        <h3 className="text-5xl font-bold tracking-tight text-slate-800">${amount}</h3>
+        <h3 className="text-5xl font-bold tracking-tight text-slate-800">₹{amount}</h3>
       </div>
 
       {/* Decorative Circular Graphic */}
@@ -94,7 +94,7 @@ export default function LoanSuccess() {
 
       <div className="w-full mt-12 space-y-6">
         <button 
-          onClick={() => navigate('/')}
+          onClick={() => navigate('/home')}
           className="w-full bg-black text-white rounded-full py-4 font-medium text-base hover:bg-slate-800 transition-colors shadow-lg active:scale-[0.98]"
         >
           Back to home

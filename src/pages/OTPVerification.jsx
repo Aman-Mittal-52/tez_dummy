@@ -32,7 +32,7 @@ export default function OTPVerification() {
   const handleProceed = () => {
     if (otp.length === 6) {
       dispatch(login({ phoneNumber }));
-      navigate('/dashboard', { replace: true });
+      navigate('/home', { replace: true });
     }
   };
 
